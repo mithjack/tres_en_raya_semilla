@@ -6,9 +6,9 @@ import utilidades
 
 # esto reprenta un tablero de 3x3 del 3 en raya
 # y lo queremos convertir en una lista de python
-linea1 = "XO-"
-linea2 = "-O-"
-linea3 = "XOX"
+linea1 = "-OX"
+linea2 = "-X-"
+linea3 = "XO-"
 
 tablero_cutre = [linea1, linea2, linea3]
 
@@ -32,5 +32,5 @@ utilidades.mostrar_tablero(tablero)
 # La propia línea ----> XO- = No hay ganador
 # La propia columna --> OOO = Hay ganador
 # La/s diagonales ----> En este caso esa posición no está en una diagonal
-hay_ganador = utilidades.comprobar_ganador(0, 1, tablero)
+hay_ganador = utilidades.comprobar_ganador(1, 1, tablero)
 print(hay_ganador)
